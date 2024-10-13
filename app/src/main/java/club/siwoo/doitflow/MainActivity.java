@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "The Create Action Is Coming Really Soon!", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "The Creating Action Is Coming Really Soon!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null)
                         .setAnchorView(R.id.fab).show();
             }
