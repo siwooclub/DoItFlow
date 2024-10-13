@@ -1,4 +1,4 @@
-package club.siwoo.doitflow.ui.slideshow;
+package club.siwoo.doitflow.ui.important;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,20 +12,20 @@ import androidx.lifecycle.ViewModelProvider;
 
 import club.siwoo.doitflow.databinding.FragmentSlideshowBinding;
 
-public class SlideshowFragment extends Fragment {
+public class ImportantFragment extends Fragment {
 
     private FragmentSlideshowBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        ImportantViewModel importantViewModel =
+                new ViewModelProvider(this).get(ImportantViewModel.class);
 
         binding = FragmentSlideshowBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        importantViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

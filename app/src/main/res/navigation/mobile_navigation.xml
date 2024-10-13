@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="club.siwoo.doitflow.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:id="@+id/nav_calendar"
+        android:name="club.siwoo.doitflow.ui.calendar.CalendarFragment"
+        android:label="@string/menu_calendar"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="club.siwoo.doitflow.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:id="@+id/nav_important"
+        android:name="club.siwoo.doitflow.ui.important.ImportantFragment"
+        android:label="@string/menu_important"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>
